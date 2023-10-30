@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos</title>
+</head>
+<body>
+    <main>
+        <h1 contenteditable>Novos atributos</h1>
+
+        <form method="get" action="" id="form2"></form>
+        <form method="get" action="" id="form">
+            <fieldset disabled>
+                <legend>Dados Pessoais</legend>
+                <label for="name">
+                    Name:
+                    <input type="text" id="name" name="name" required>
+                </label>
+                <label for="email">
+                    E-mail:
+                    <input type="text" id="email" name="email" placeholder="Ex: meuemail@gmail.com">
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Endereço</legend>
+                <label for="address">
+                    Endereço:
+                    <input type="text" id="address" name="address" form="form2">
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Observações</legend>
+                <textarea name=observation id="observation" cols="30" rows="5" minlength="10" maxlength="250"></textarea>
+            </fieldset>
+            <br>
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
